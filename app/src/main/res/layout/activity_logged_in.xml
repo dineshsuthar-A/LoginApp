@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoggedIn">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:layout_gravity="center"
+
+            android:layout_margin="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="20"
+            android:layout_gravity="center"
+            android:weightSum="20">
+
+            <TextView
+                android:id="@+id/nameview"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:textSize="15dp"
+                android:textAlignment="center"
+
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Name" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:layout_weight="10"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Name" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="20"
+            android:weightSum="20">
+
+            <TextView
+                android:id="@+id/emailidview"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
+                android:text="Email " />
+            <TextView
+                android:id="@+id/emailid"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:textSize="15dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Name" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="20"
+            android:weightSum="20">
+
+            <TextView
+                android:id="@+id/personidview"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
+                android:text="ID " />
+            <TextView
+                android:id="@+id/personid"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:textSize="15dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Name" />
+
+        </LinearLayout>
+
+
+
+
+
+
+            <Button
+                android:id="@+id/signout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Log Out"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:layout_weight="10" />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
